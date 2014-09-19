@@ -34,6 +34,8 @@ filetype plugin on    " Enable filetype-specific plugins
 " auto reload vimrc when editing it
 autocmd! bufwritepost .vimrc source ~/.vimrc
 
+autocmd filetype html setlocal shiftwidth=2 tabstop=2
+autocmd filetype jade setlocal shiftwidth=2 tabstop=2
 
 syntax on		" syntax highlight
 set hlsearch		" search highlighting
@@ -75,8 +77,8 @@ set tm=500
 
 " TAB setting{
    set expandtab        "replace <TAB> with spaces
-   set softtabstop=3 
-   set shiftwidth=3 
+   set softtabstop=4 
+   set shiftwidth=4 
 
    au FileType Makefile set noexpandtab
 "}      							
@@ -336,3 +338,6 @@ au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw! " recompile c
 
 " --- vim-gitgutter
 let g:gitgutter_enabled = 1
+
+" --- NERDTree
+let NERDTreeIgnore = ['\.css.map$']
