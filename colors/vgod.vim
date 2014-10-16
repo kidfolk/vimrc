@@ -30,13 +30,13 @@
    hi Error          term=reverse  cterm=bold  ctermfg=7  ctermbg=1
    hi Todo           term=standout  ctermfg=0  ctermbg=3
 
-    hi TabLine guibg=#566676 guifg=fg gui=underline ctermbg=7
-    hi TabLineFill guibg=#c0d0e0 guifg=bg gui=none
-    hi TabLineSel guibg=bg guifg=fg gui=bold ctermbg=1
-    hi Cursor guibg=#cd4e00 guifg=bg gui=none ctermbg=3
-    hi CursorColumn guibg=#dbdbdb gui=none ctermbg=yellow
-    hi CursorLine guibg=#dbdbdb gui=none
-    "highlight Pmenu ctermfg=1 ctermbg=4 guibg=grey30
-    hi PmenuSel     ctermfg=1 ctermbg=7 guibg=grey30
+   hi TabLine guibg=#566676 guifg=fg gui=underline ctermbg=7
+   hi TabLineFill guibg=#c0d0e0 guifg=bg gui=none
+   hi TabLineSel guibg=bg guifg=fg gui=bold ctermbg=1
+   hi Cursor guibg=#cd4e00 guifg=bg gui=none ctermbg=3
+   hi CursorColumn guibg=#dbdbdb gui=none ctermbg=yellow
+   hi CursorLine guibg=#dbdbdb gui=none
+   "highlight Pmenu ctermfg=1 ctermbg=4 guibg=grey30
+   hi PmenuSel     ctermfg=1 ctermbg=7 guibg=grey30
 "}
 
