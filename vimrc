@@ -341,3 +341,6 @@ let g:gitgutter_enabled = 1
 
 " --- NERDTree
 let NERDTreeIgnore = ['\.css.map$']
+
+" --- vim-easytags
+let g:easytags_async = 1
