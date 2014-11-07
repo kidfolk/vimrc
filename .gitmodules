@@ -55,9 +55,6 @@
 [submodule "bundle/pythoncomplete"]
 	path = bundle/pythoncomplete
 	url = https://github.com/vim-scripts/pythoncomplete.git
-[submodule "bundle/powerline"]
-	path = bundle/powerline
-	url = https://github.com/Lokaltog/vim-powerline.git
 [submodule "bundle/vim-javascript"]
 	path = bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
@@ -103,3 +100,6 @@
 [submodule "bundle/vim-snippets"]
 	path = bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
+[submodule "bundle/vim-velocity"]
+	path = bundle/vim-velocity
+	url = https://github.com/lepture/vim-velocity.git
