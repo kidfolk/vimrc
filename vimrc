@@ -8,6 +8,8 @@
 " For pathogen.vim: auto load all plugins in .vim/bundle
 
 execute pathogen#infect()
+syntax on
+filetype plugin indent on
 
 " General Settings
 
@@ -17,9 +19,6 @@ set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set autoread		" auto read when file is changed from outside
 
-syntax on
-filetype plugin indent on
-set background=dark
 colorscheme flattown
 
 " auto reload vimrc when editing it
