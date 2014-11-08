@@ -7,13 +7,7 @@
 
 " For pathogen.vim: auto load all plugins in .vim/bundle
 
-let g:pathogen_disabled = []
-if !has('gui_running')
-   call add(g:pathogen_disabled, 'powerline')
-endif
-
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+execute pathogen#infect()
 
 " General Settings
 
@@ -23,13 +17,10 @@ set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set autoread		" auto read when file is changed from outside
 
-
-filetype off          " necessary to make ftdetect work on Linux
 syntax on
-filetype on           " Enable filetype detection
-filetype indent on    " Enable filetype-specific indenting
-filetype plugin on    " Enable filetype-specific plugins
-
+filetype plugin indent on
+set background=dark
+colorscheme flattown
 
 " auto reload vimrc when editing it
 autocmd! bufwritepost .vimrc source ~/.vimrc
@@ -37,21 +28,7 @@ autocmd! bufwritepost .vimrc source ~/.vimrc
 autocmd filetype html setlocal shiftwidth=2 tabstop=2
 autocmd filetype jade setlocal shiftwidth=2 tabstop=2
 
-syntax on		" syntax highlight
 set hlsearch		" search highlighting
-
-if has("gui_running")	" GUI color and font settings
-  set guifont=Osaka-Mono:h20
-  set background=dark 
-  set t_Co=256          " 256 color mode
-  set cursorline        " highlight current line
-  colors moria
-  highlight CursorLine          guibg=#003853 ctermbg=24  gui=none cterm=none
-else
-" terminal color settings
-  colors vgod
-endif
-
 set clipboard=unnamed	" yank to the system register (*) by default
 set showmatch		" Cursor shows matching ) and }
 set showmode		" Show current mode
