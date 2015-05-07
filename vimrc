@@ -18,6 +18,7 @@ set bs=2		" allow backspacing over everything in insert mode
 set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set autoread		" auto read when file is changed from outside
+set cursorline
 
 colorscheme flattown
 
@@ -44,6 +45,12 @@ set copyindent		" copy the previous indentation on autoindenting
 set ignorecase		" ignore case when searching
 set smartcase		" ignore case if search pattern is all lowercase,case-sensitive otherwise
 set smarttab		" insert tabs on the start of a line according to context
+
+" folding settings
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=1
 
 " disable sound on errors
 set noerrorbells
@@ -313,6 +320,7 @@ let g:gitgutter_enabled = 1
 
 " --- NERDTree
 let NERDTreeIgnore = ['\.css.map$']
+map <C-e> :NERDTreeToggle<CR>
 
 " --- vim-easytags
 let g:easytags_async = 1
