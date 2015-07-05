@@ -286,11 +286,6 @@ if !has("gui_running")
    nmap OD h
 endif
 
-
-
-" --- Command-T
-let g:CommandTMaxHeight = 15
-
 " --- SuperTab
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
