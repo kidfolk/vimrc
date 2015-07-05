@@ -25,8 +25,8 @@ colorscheme flattown
 " auto reload vimrc when editing it
 autocmd! bufwritepost .vimrc source ~/.vimrc
 
-autocmd filetype html setlocal shiftwidth=2 tabstop=2
-autocmd filetype jade setlocal shiftwidth=2 tabstop=2
+" autocmd filetype html setlocal shiftwidth=2 tabstop=2
+" autocmd filetype jade setlocal shiftwidth=2 tabstop=2
 
 set hlsearch		" search highlighting
 set clipboard=unnamed	" yank to the system register (*) by default
@@ -60,8 +60,8 @@ set tm=500
 
 " TAB setting{
    set expandtab        "replace <TAB> with spaces
-   set softtabstop=4 
-   set shiftwidth=4 
+   set softtabstop=2 
+   set shiftwidth=2 
 
    au FileType Makefile set noexpandtab
 "}      							
