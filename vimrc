@@ -19,8 +19,12 @@ set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set autoread		" auto read when file is changed from outside
 set cursorline
+set nu
 
-colorscheme flattown
+if has("gui_running")
+  set guifont=Monaco:h16
+endif
+colorscheme desert
 
 " auto reload vimrc when editing it
 autocmd! bufwritepost .vimrc source ~/.vimrc
@@ -319,3 +323,6 @@ map <C-e> :NERDTreeToggle<CR>
 
 " --- vim-easytags
 let g:easytags_async = 1
+
+" --- ctrlp
+map <leader>t :CtrlP<CR>
