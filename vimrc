@@ -6,7 +6,6 @@
 
 
 " For pathogen.vim: auto load all plugins in .vim/bundle
-
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
@@ -24,6 +23,7 @@ set nu
 if has("gui_running")
   set guifont=Monaco:h16
 endif
+set background=dark
 colorscheme desert
 
 " auto reload vimrc when editing it
@@ -326,3 +326,6 @@ let g:easytags_async = 1
 
 " --- ctrlp
 map <leader>t :CtrlP<CR>
+
+let g:tern_show_argument_hints = 'on_move'
+let g:tern_show_signature_in_pum = 1
