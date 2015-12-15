@@ -208,13 +208,12 @@ endfun
 
 
 " Enable omni completion. (Ctrl-X Ctrl-O)
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-autocmd FileType c set omnifunc=ccomplete#Complete
-autocmd FileType java setlocal omnifunc=javacomplete#Complete
+" autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+" autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+" autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+" autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+" autocmd FileType c set omnifunc=ccomplete#Complete
+" autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 " use syntax complete if nothing else available
 if has("autocmd") && exists("+omnifunc")
@@ -327,5 +326,6 @@ let g:easytags_async = 1
 " --- ctrlp
 map <leader>t :CtrlP<CR>
 
-let g:tern_show_argument_hints = 'on_move'
+" --- Tern
+let g:tern_show_argument_hints = 'on_hold'
 let g:tern_show_signature_in_pum = 1
